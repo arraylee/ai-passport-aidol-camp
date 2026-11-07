@@ -1,0 +1,8 @@
+Mode: built-in image_gen; transparent_background=true
+Use case: background-extraction
+Reference: user-provided four-pose JOY PNG, top-left standing pose.
+
+Final prompt:
+Create a clean new isolated 3D render of the single JD JOY mascot represented by the TOP LEFT standing dog in this reference. Use the reference ONLY for the character design and its exact standing pose, NOT for its noisy cutout pixels. Re-render a perfectly smooth outer silhouette so NONE of the white/red splatters from the reference survive. One happy white stylized dog with a huge horizontally rounded head, floppy ears, small black oval eyes, black oval nose, broad thin black curved smile, red collar, small white body, arms hanging at sides, and both feet planted side by side. Same distinctive head/body proportions and gentle pose as the top-left reference. Soft 3D material shading, clean polished edges. Single full-body character only, centered with 8 percent clear margin. Genuine transparent RGBA canvas; character is opaque and every pixel outside its silhouette is transparent. No ground, no shadow, no flecks, no halo, no outline, no fragments, no background of any kind, no text, no other poses.
+
+QA: visually inspected composited on white and dark backgrounds; master alpha retained; device PNG decoded with production C decoder and matched CRC.

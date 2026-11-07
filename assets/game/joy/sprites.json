@@ -1,0 +1,97 @@
+{
+  "character": "JD JOY",
+  "status": "generated game adaptation; not official game assets or brand approval",
+  "official_reference_page": "https://jdrdl.jd.com/Brand-ip.html",
+  "source": "assets/game/joy/joy-jump-sheet-clean.png",
+  "source_sha256": "d82de6b1652a860010d4b2f3943a4b581e11220a953db38e1d3f2ecf7c223192",
+  "frames": [
+    {
+      "pose": "idle",
+      "file": "assets/game/joy/joy_idle.png",
+      "size": [
+        56,
+        56
+      ],
+      "source_cell": [
+        0,
+        0,
+        658,
+        597
+      ],
+      "source_character_bounds": [
+        70,
+        110,
+        622,
+        567
+      ],
+      "foot_baseline": 55,
+      "sha256": "4759721d74dd08b671fd4a5a352aed68a932f52267454118e3f85f8d30b2eada"
+    },
+    {
+      "pose": "push",
+      "file": "assets/game/joy/joy_push.png",
+      "size": [
+        56,
+        56
+      ],
+      "source_cell": [
+        658,
+        0,
+        1316,
+        597
+      ],
+      "source_character_bounds": [
+        67,
+        142,
+        612,
+        574
+      ],
+      "foot_baseline": 55,
+      "sha256": "319a492611548b2e5189d74fd59b389b6f0887781aaf40efccb1dc3bd7ff2b5a"
+    },
+    {
+      "pose": "tuck",
+      "file": "assets/game/joy/joy_tuck.png",
+      "size": [
+        56,
+        56
+      ],
+      "source_cell": [
+        0,
+        597,
+        658,
+        1195
+      ],
+      "source_character_bounds": [
+        75,
+        70,
+        623,
+        481
+      ],
+      "foot_baseline": 55,
+      "sha256": "a45f8f9d275eec71791d3bcdd2f7419045a44223588e60703e60e39f440e52b4"
+    },
+    {
+      "pose": "land",
+      "file": "assets/game/joy/joy_land.png",
+      "size": [
+        56,
+        56
+      ],
+      "source_cell": [
+        658,
+        597,
+        1316,
+        1195
+      ],
+      "source_character_bounds": [
+        66,
+        101,
+        611,
+        560
+      ],
+      "foot_baseline": 55,
+      "sha256": "049aae2c59d3d09826998feddea65a4d9e50a540f216ab4ae2736ed5f4c4a4ef"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "data_format": "HRE1/HRC1",
+  "default_volume": 90,
+  "activation": false,
+  "welcome_seen": false,
+  "friends": 0,
+  "scores": 0,
+  "gallery": "compiled non-scannable example",
+  "roles": [
+    {
+      "id": 1,
+      "name": "喵喵",
+      "signature": "FoloToy\n简单开放\n人人可造",
+      "avatar": "1-avatar.png",
+      "avatar_sha256": "e52d94785b6efa842a714654fcc9d4f7320b4881d3654dd08dafb9fce752c7a6",
+      "profile_file": "1-profile.bin",
+      "profile_sha256": "c1f7d702a80ae5e7dc52d62ef2577cbbb25c045d6dda3a49a872130518f48cc0",
+      "config_file": "1-config.bin",
+      "config_sha256": "a1e2be745755184b2828a95c001063c8d4d19d392ee7b1ef001f457aac9fae5c",
+      "source": "assets/profiles/miaomiao-portrait.png",
+      "image_crc": 1224896911
+    },
+    {
+      "id": 2,
+      "name": "胡彦斌",
+      "signature": "做你想做的事，成为你想成为的人！",
+      "avatar": "2-avatar.png",
+      "avatar_sha256": "1f5acb9cc5c667a5d03da85841b5310db0162be401a84256c3a4631b587bbabe",
+      "profile_file": "2-profile.bin",
+      "profile_sha256": "634b871b91b46ca4642b891b1b7321a5f669fe731a40192281af562b8e905598",
+      "config_file": "2-config.bin",
+      "config_sha256": "feec97bbe14089ba4a184b5d9b72081c7b193f58d42d506a93187e6829ba6fd7",
+      "source": "output/install-38cc-v0415/avatar.png",
+      "image_crc": 1031210197
+    },
+    {
+      "id": 3,
+      "name": "王珞丹",
+      "signature": "博主只在这里瞎胡闹，正经事请找@王珞丹工作室",
+      "avatar": "3-avatar.png",
+      "avatar_sha256": "2c48eda10f88a3527b3477f5a03d26ce65fc1b1d716f5b7f465035e6cd7cd044",
+      "profile_file": "3-profile.bin",
+      "profile_sha256": "8871e6f4269176b5d9c9c402c5258036f5045bdcf76f3ad5fd5992be234b02d5",
+      "config_file": "3-config.bin",
+      "config_sha256": "8cb340b03b709a22030b4a85bfb03df8fa8cd1c228dba26ca8a31123bac51b0b",
+      "source": "output/install-ed54-v0415/avatar.png",
+      "image_crc": 2019109894
+    },
+    {
+      "id": 4,
+      "name": "小狮日记",
+      "signature": "浪漫 至死不渝",
+      "avatar": "4-avatar.png",
+      "avatar_sha256": "eb52aa2c93868cdf92348b1f01fe041cabde44107e61467370be0fae56cb3289",
+      "profile_file": "4-profile.bin",
+      "profile_sha256": "efa55d1b42bea59e2dbe09f89e657e48c445e4ef0df6dcca9be56b6bfbbcd4a3",
+      "config_file": "4-config.bin",
+      "config_sha256": "a737e382d3d5214d19c643bb5f7a33cb003a44a287264d0caf34afc5d724ace2",
+      "source": "assets/profiles/xiaoshi-original.jpg",
+      "image_crc": 1089314055
+    },
+    {
+      "id": 5,
+      "name": "手工耿",
+      "signature": "喜欢做一些有趣的小手工",
+      "avatar": "5-avatar.png",
+      "avatar_sha256": "aec57e7378447dc4c26bfc2402c656afb4d37916001c91e111145ed56c65d4b8",
+      "profile_file": "5-profile.bin",
+      "profile_sha256": "d7c68b6d679480ccb54989771a3fc3e3c32d8ff211d8dd669504e13a4cf630c6",
+      "config_file": "5-config.bin",
+      "config_sha256": "1e27165eb1574b6fc689f01b4849e49d87c0e84fddda76edb3428dba0e9deaf1",
+      "source": "assets/profiles/shougonggeng-original.jpg",
+      "image_crc": 1575194893
+    },
+    {
+      "id": 6,
+      "name": "京东3C数码",
+      "signature": "谁敢横刀立马 唯我3C数码 战斗战斗 只做第一",
+      "avatar": "6-avatar.png",
+      "avatar_sha256": "a035644b62c216cd98988dcf020eaa0526aa18f16b25cd99c60178a858387bd8",
+      "profile_file": "6-profile.bin",
+      "profile_sha256": "e196ac307b7419ba1983e15f1b5e37e8d9170ad63990de34354bee46ffbdb487",
+      "config_file": "6-config.bin",
+      "config_sha256": "46e1c9c292b255e1a0cb8ef0df980f579fa71ab261034e5b1646e96aec50d8a7",
+      "source": "assets/profiles/jd-joy-standing-device.png",
+      "image_crc": 1918702382,
+      "asset_source": {
+        "kind": "user-provided JOY reference; built-in image_gen edit",
+        "reference": "assets/profiles/jd-joy-standing-reference.png",
+        "pose": "top-left standing",
+        "transparent_master": "assets/profiles/jd-joy-standing-transparent.png",
+        "transparent_sha256": "458dd8cfe8059dee65e8e453630d210d4e9d5e09c2dfbe51435f3faf39ca475f",
+        "device_format": "96x156 RGBA PNG; firmware composites alpha against #080F20",
+        "visible_bounds": [
+          95,
+          169,
+          1215,
+          1099
+        ]
+      }
+    }
+  ],
+  "builtin_avatars": [
+    {
+      "role": 1,
+      "versions": [
+        "0.7.0",
+        "0.7.1",
+        "0.7.2"
+      ],
+      "avatar": "1-avatar.png",
+      "sha256": "e52d94785b6efa842a714654fcc9d4f7320b4881d3654dd08dafb9fce752c7a6"
+    }
+  ]
+}

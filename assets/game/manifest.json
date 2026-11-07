@@ -1,0 +1,140 @@
+{
+  "original_art": "background vector recipes; JOY adaptation from imagegen and official references in assets/game/joy/sprites.json",
+  "theme": "Aidol venue navy/chrome; supplied reference assets/game/venue/aidol-reference.png",
+  "format": "RGB565A8 sprites and opaque RGB565 dither sky strip; direct Flash source",
+  "sprites": [
+    {
+      "name": "joy_idle",
+      "size": [
+        56,
+        56
+      ],
+      "packed_bytes": 9408,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "a83d0e0d2009968b25169507c000a1bf0ee32d1d9d0f44c414eaf0aa2160cfac"
+    },
+    {
+      "name": "joy_push",
+      "size": [
+        56,
+        56
+      ],
+      "packed_bytes": 9408,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "c6b99097dd737a17f8c837134a80f8db1b4588159f139821af15e78fbac25d4b"
+    },
+    {
+      "name": "joy_tuck",
+      "size": [
+        56,
+        56
+      ],
+      "packed_bytes": 9408,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "f45b7ebd77d71512a4d4d4fdda3bb2c1d1d04d040bc87814db2d7a6a98792e57"
+    },
+    {
+      "name": "joy_land",
+      "size": [
+        56,
+        56
+      ],
+      "packed_bytes": 9408,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "b8f2eb90836a469268e704288af9ece7e86b3e596552ddd27a379b35cec3ed09"
+    },
+    {
+      "name": "platform",
+      "size": [
+        24,
+        16
+      ],
+      "packed_bytes": 1152,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "90d004dc7d8ab9fc8596107e8f35999d39615597172228aa330b99133c2e58df"
+    },
+    {
+      "name": "wave",
+      "size": [
+        32,
+        16
+      ],
+      "packed_bytes": 1536,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "048112ee4f612d622266892604150391fdf69feb87de76f64b795b24b9eefeed"
+    },
+    {
+      "name": "spike0",
+      "size": [
+        32,
+        32
+      ],
+      "packed_bytes": 3072,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "3ebc6b88d1bc2437efec171cbbfe1bd3fab5a45917894538650951b26d7367ba"
+    },
+    {
+      "name": "spike1",
+      "size": [
+        32,
+        32
+      ],
+      "packed_bytes": 3072,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "1dc05051147e3e6f9d4e16b3d6a78b5592cd40805f06234b11105d642a9b8706"
+    },
+    {
+      "name": "flag",
+      "size": [
+        24,
+        44
+      ],
+      "packed_bytes": 3168,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "f9fbc18a834189fb050c072f51662bade3d2b20584c68dc009cbdaed4f1b0e54"
+    },
+    {
+      "name": "coin",
+      "size": [
+        12,
+        16
+      ],
+      "packed_bytes": 576,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "700db657365679561f4de169a6cc04d5b0d38ddfcf8255147ce0791ed5304c07"
+    },
+    {
+      "name": "glint",
+      "size": [
+        13,
+        13
+      ],
+      "packed_bytes": 507,
+      "alignment": 4,
+      "format": "RGB565A8",
+      "sha256": "357a0a3bf8ee587dabb071c22da0784eb18ff1c0147c533516c6a6703e2fb9c8"
+    },
+    {
+      "name": "sky",
+      "size": [
+        16,
+        320
+      ],
+      "packed_bytes": 10240,
+      "alignment": 4,
+      "format": "RGB565",
+      "sha256": "aebeea7a345ca0d395944f19cd410a7fdabd830e353f593d84a08d90469d1c65"
+    }
+  ],
+  "packed_bytes": 60955
+}

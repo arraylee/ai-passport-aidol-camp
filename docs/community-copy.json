@@ -1,0 +1,11 @@
+{
+  "title_zh": "京东 Aidol 创造营 · 碰友对讲",
+  "title_en": "JD Aidol Camp · Talk & Play",
+  "description_zh": "明星&博主同款玩法，把 AI PASSPORT 变成随身对讲机和聚会游戏机。和朋友离线组队，对全体队友或指定伙伴按住说话；靠近碰一碰、双方确认，就能交换头像、昵称和签名。再用声音带 JOY 闯关：发声前进、升调跳高，收集金币冲向终点，比一比房间排行榜。附带蓝牙批量配置助手，可为多台胸卡分别设置人物或清空数据，配置后无需重启。",
+  "description_en": "Try the JD Aidol Camp experience enjoyed by stars and creators. Turn AI PASSPORT into a pocket walkie-talkie and a party game: form an offline room and hold to talk to everyone or one teammate. Bring two badges close and confirm on both to exchange avatars, names and signatures. Then guide JOY with your voice: keep humming to move, raise your pitch to jump, collect coins and compare scores in the room. A companion Bluetooth console lets you assign profiles or clear data on several badges without rebooting.",
+  "source_url": "https://github.com/arraylee/ai-passport-aidol-camp",
+  "firmware_version": "0.7.11",
+  "helper_version": "0.3.6",
+  "changelog_zh": "",
+  "changelog_en": ""
+}

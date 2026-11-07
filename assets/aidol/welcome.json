@@ -1,0 +1,15 @@
+{
+  "semantic_id": "aidol_welcome",
+  "text": "欢迎加入 Aidol 创造营 S2冒险季，让我们一起破格创造！",
+  "source_file": "download-1791985553851.mp3",
+  "source_sha256": "445c994b92b955cdbf7e22eb9415a473feb79f18c5080e76f38a5cd31144bef9",
+  "sample_rate": 16000,
+  "channels": 1,
+  "samples": 75264,
+  "seconds": 4.704,
+  "format": "ADP1 IMA ADPCM low nibble first",
+  "bytes": 37644,
+  "sha256": "06d0ad0768b9a58abb682730c8fd29beeda9a6e50a110c321e889df650239b67",
+  "decoded_snr_db": 27.87,
+  "conversion": "ffmpeg -i source.mp3 -ac 1 -ar 16000 -c:a pcm_s16le welcome.wav; python tools/wav_to_adpcm.py welcome.wav assets/aidol/welcome.adpcm 16000"
+}

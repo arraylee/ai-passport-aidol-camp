@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="passport-token" content="{{TOKEN}}"><title>AI PASSPORT 测试助手</title><link rel="stylesheet" href="/app.css"><script src="/app.js" defer></script></head><body>
+<header><div class="wrap head"><div><div class="eyebrow">Aidol LIVE · FoloToy</div><h1>AI PASSPORT 测试助手</h1><p>同一份固件，六个角色。选好角色，一键设置并重置。</p></div><span class="local">本机蓝牙连接</span></div></header>
+<main class="wrap"><section class="steps"><span><b>1</b>扫描蓝牙</span><span><b>2</b>识别 SN</span><span><b>3</b>选择角色</span><span><b>4</b>设置并重置</span></section>
+<section class="toolbar"><div><h2>附近设备 <span id="count">0</span></h2><p>扫描约21秒，合并三轮结果后读取资料；未发现的历史设备会明确标记。</p></div><div><button id="refresh">扫描并读取</button><button id="inspect-all">识别全部</button></div></section>
+<div id="notice" class="notice" role="status" hidden></div><div id="devices" class="devices"></div>
+<section class="empty" id="empty" hidden><div class="plug">BLE</div><h2>打开 AI PASSPORT 开始</h2><p>请唤醒设备、断开小程序，再点击扫描设备。首次使用请允许蓝牙访问。</p></section>
+<section id="progress" class="progress" hidden><h2 id="job-title">正在处理</h2><div id="job-items"></div></section>
+<div class="batch"><label><input type="checkbox" id="select-all"> 全选已识别设备</label><span id="selected-count">已选 0 台</span><button id="clear-selected">清空所选数据</button><button id="apply-selected" class="primary">设置并重置所选</button></div>
+<footer><p><strong>每次设置都会：</strong>恢复所选角色的头像、昵称和签名；清空好友、游戏成绩、激活记录与自定义相册，恢复示例二维码。音量 90%，配置后短按下键激活。</p><p>原 SN 和固件保留。需先升级到配套 v0.7.0 固件；之后通过蓝牙操作，无需 USB 或重启。清空数据保留当前人物，清除好友、成绩、激活记录和自定义相册。批量最多六台，同时处理两台。</p></footer>
+</main>
+<dialog id="confirm"><h2 id="confirm-title">设置并重置这些设备？</h2><p id="confirm-desc">以下设备会恢复为所选角色，并清空本轮测试状态。</p><div id="confirm-list"></div><p id="confirm-caution" class="caution">头像、昵称、签名和相册的自行修改会被预设替换。原 SN 和固件保留。</p><div class="dialog-actions"><button id="cancel">返回检查</button><button id="confirm-go" class="primary">开始设置并重置</button></div></dialog>
+</body></html>

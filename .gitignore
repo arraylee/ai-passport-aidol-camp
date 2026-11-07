@@ -1,0 +1,12 @@
+/build*/
+/.venv/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/releases/
+__pycache__/
+*.pyc
+.DS_Store
+/docs/evidence/screens/
+/build
+/managed_components

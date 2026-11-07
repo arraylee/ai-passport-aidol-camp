@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "喵喵",
+    "signature": "简单开放 人人可造",
+    "source": "User supplied original image and signature",
+    "url": "",
+    "original": "miaomiao-original.png",
+    "sha256": "c43170bb89847b907899b2c469b59273af4784fd4354ae8c1eb7307cbf650109"
+  },
+  {
+    "id": 2,
+    "name": "胡彦斌",
+    "signature": "歌手",
+    "source": "Weibo public verified description, not a fabricated signature",
+    "url": "https://weibo.com/huyanbin",
+    "original": "huyanbin-original.jpg",
+    "sha256": "25730759a3e890fff96493c7cc013e0475dc4f646c4b581184577d22c424e00e"
+  },
+  {
+    "id": 3,
+    "name": "王珞丹",
+    "signature": "演员，电视剧《奋斗》中饰演米莱",
+    "source": "Weibo public verified description",
+    "url": "https://weibo.com/wangluodan",
+    "original": "wangluodan-original.jpg",
+    "sha256": "d2e5071fb61e149b3260384114232b8031be7d9b69f130560e82fb08656e112b"
+  },
+  {
+    "id": 4,
+    "name": "小狮日记",
+    "signature": "浪漫 至死不渝",
+    "source": "Bilibili signature excerpt excluding business contact",
+    "url": "https://space.bilibili.com/444728505",
+    "original": "xiaoshi-original.jpg",
+    "sha256": "c57ef5e1a8604a4140d27df496cafdd8d16813c6b2e168224c6bdd77ec7b80c7"
+  },
+  {
+    "id": 5,
+    "name": "手工耿",
+    "signature": "喜欢做一些有趣的小手工",
+    "source": "Bilibili signature",
+    "url": "https://space.bilibili.com/280793434",
+    "original": "shougonggeng-original.jpg",
+    "sha256": "bfce783006ec8f298dceef2156c8eb268d2ee9b2b1435842040a5501929647d4"
+  },
+  {
+    "id": 6,
+    "name": "LKs",
+    "signature": "探索包罗万象的世界",
+    "source": "Bilibili -LKs- signature excerpt excluding business contact",
+    "url": "https://space.bilibili.com/125526",
+    "original": "lks-original.jpg",
+    "sha256": "ad8b9ac0db20b1666db28348d3e56d3096d4f0e412375e1ae2aa66e6add0e378"
+  }
+]

@@ -1,0 +1,17 @@
+#ifndef LV_CONF_H
+#define LV_CONF_H
+#define LV_COLOR_DEPTH 16
+#define LV_MEM_SIZE (44 * 1024U)
+#define LV_USE_OS LV_OS_NONE
+#define LV_USE_FONT_COMPRESSED 1
+#define LV_FONT_MONTSERRAT_10 1
+#define LV_FONT_MONTSERRAT_12 1
+#define LV_FONT_MONTSERRAT_20 1
+#define LV_FONT_MONTSERRAT_28 1
+#define LV_FONT_MONTSERRAT_48 1
+#define LV_USE_QRCODE 1
+#define LV_USE_LOG 1
+#define LV_LOG_PRINTF 1
+#define LV_ASSERT_HANDLER abort();
+#define LV_ASSERT_HANDLER_INCLUDE <stdlib.h>
+#endif

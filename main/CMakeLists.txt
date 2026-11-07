@@ -1,0 +1,4 @@
+idf_component_register(SRCS "main.c" "hr_configure.c" "hr_management.c" "hr_cards.c" "hr_preview.c" "hr_friend_store.c" "hr_gallery.c" "hr_gallery_demo.c" "hr_aidol_assets.c" "hr_intro.c" "hr_welcome.c" "hr_power.c" "hr_edit.c" "hr_ble.c" "hr_profile_store.c" "hr_profile_live.c" "hr_png.c" "hr_png_stored.c" "hr_core.c" "hr_identity.c" "hr_game.c" "hr_sfx.c" "hr_game_scene.c" "hr_game_art.c" "hr_codec.c" "hr_input.c" "hr_controls.c" "hr_platform.c" "hr_ui.c" "hr_profiles.c" "hr_social.c" "hr_touch.c" "hr_font_common.c" "hr_font_common20.c" "hr_font14.c" "hr_font16.c" "hr_font20.c" "hr_font24.c" "hr_font40.c" "hr_font80.c"
+ INCLUDE_DIRS "." REQUIRES esp_app_format bsp nvs_flash esp_timer esp_wifi esp_event esp_netif bt json esp_partition esp_new_jpeg
+ EMBED_TXTFILES "../assets/fonts/FONT-NOTICES.txt")
+

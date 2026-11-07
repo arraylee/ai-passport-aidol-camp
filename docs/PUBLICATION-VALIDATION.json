@@ -1,0 +1,37 @@
+{
+  "firmware_version": "0.7.11",
+  "helper_version": "0.3.6",
+  "date": "2026-11-07",
+  "firmware_runtime_changed": false,
+  "compiled_firmware_inputs_match_original_release": 88,
+  "idf_build_and_size": "passed",
+  "frozen_app_sha256": "b7aff8b34e960e3f701053958fed5c7b533714de2dbf0d041de45ffad3c09411",
+  "web_bin_sha256": "f5627fdb8e979212f404cc7c08231f783cc6e504de1aa21c80281d0319a384d2",
+  "host_tests": {
+    "passed": 41,
+    "failed": 0,
+    "fresh_public_source_build": true
+  },
+  "helper_tests": {
+    "run": 44,
+    "passed": 43,
+    "skipped": 1,
+    "failed": 0
+  },
+  "release_layout_tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "safe_flash_tests": "passed, mocked hardware; no device write",
+  "cover": {
+    "width": 1086,
+    "height": 1448,
+    "generation_tool": "built-in image_gen",
+    "completed": true,
+    "final_upload_file_visually_inspected": true,
+    "type": "gameplay illustration"
+  },
+  "original_generated_source_and_license_whitespace": "preserved unchanged; authored publication text and packaging edits checked separately",
+  "device_flashing_performed": false,
+  "physical_acceptance": "pending: multi-device radio/audio, game feel, 20-minute sleep/wake and full battery discharge not verified for this version"
+}

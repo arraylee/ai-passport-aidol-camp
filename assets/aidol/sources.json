@@ -1,0 +1,8 @@
+{
+  "source_project": "ai-passport-event-firmware",
+  "source_joy_file": "main/aidol_assets.c / aidol_joy",
+  "source_joy_sha256": "533e366e35a7ffdc375fa2b2e7e5b27a88cd4ad26dbf7c205a768414c2350fe1",
+  "joy_conversion": "exact existing 32px RGB565A8 pixels to nearest-neighbor 80px, RGB565A8 in Flash",
+  "welcome_sha256": "06d0ad0768b9a58abb682730c8fd29beeda9a6e50a110c321e889df650239b67",
+  "welcome_unmodified": true
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.7.11",
+  "device_flashing_performed": false,
+  "physical_acceptance": "pending: no device write in this task",
+  "nickname": "京东3C数码",
+  "nickname_font_px": 20,
+  "measured_text_px": 106,
+  "label_width_px": 108,
+  "native_no_horizontal_scroll_ms": 6000,
+  "native_one_line": true,
+  "avatar_and_signature_unchanged": true,
+  "host_tests": {
+    "passed": 41,
+    "failed": 0
+  },
+  "helper_tests": {
+    "run": 44,
+    "passed": 43,
+    "skipped": 1,
+    "failed": 0
+  },
+  "idf_build_passed": true
+}

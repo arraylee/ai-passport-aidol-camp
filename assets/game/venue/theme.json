@@ -1,0 +1,14 @@
+{
+  "reference": "user-supplied Aidol event pass image",
+  "reference_sha256": "d747bfcf820ccfdaa6fffa1d2db597c6046f9bf6a7738a98c52f584a69de8484",
+  "method": "existing code-native vector recipe and compact Flash strips",
+  "palette": {
+    "background": "deep navy",
+    "platform": "chrome/silver blue",
+    "hazard_core": "#E1251B",
+    "coins": "gold"
+  },
+  "player_column": "quiet navy; bright decorations restricted to far/right layers",
+  "geometry_and_hitboxes_changed": false,
+  "official_brand_approval": false
+}

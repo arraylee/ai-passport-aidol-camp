@@ -1,0 +1,20 @@
+{
+  "official_page": "https://jdrdl.jd.com/Brand-ip.html",
+  "assets": [
+    {
+      "file": "ipImg01.png",
+      "url": "https://jdrdl.jd.com/assets/img/ipImg01.png",
+      "sha256": "c133957729c81866df9d99c48bf2929640bb8e1a2155bc83ff505236200e6c88"
+    },
+    {
+      "file": "ipImg02.png",
+      "url": "https://jdrdl.jd.com/assets/img/ipImg02.png",
+      "sha256": "0115ae472efb26fd328ff652e79baaf932834976ec5bb09da4ad8b4f5372232a"
+    },
+    {
+      "file": "ipImg05.png",
+      "url": "https://jdrdl.jd.com/assets/img/ipImg05.png",
+      "sha256": "ce692a5ce146f7288192ee991089cf8c426c065b319bb0554f49cde827151489"
+    }
+  ]
+}
