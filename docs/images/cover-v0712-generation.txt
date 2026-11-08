@@ -1,0 +1,4 @@
+Mode: built-in image_gen edit
+Generation completed; final upload file inspected.
+Reference: previous approved JD Aidol KV cover.
+Prompt: Change ONLY the small bottom version text from v0.7.11 to v0.7.12. Preserve all other composition, lettering, chrome typography, JD logo, Aidol 创造营, 明星&博主同款玩法, feature line, JOY, lighting, and 玩法示意图. Portrait 3:4; complete finished image, no loading page.

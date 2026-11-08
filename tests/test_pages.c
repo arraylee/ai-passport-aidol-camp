@@ -25,6 +25,9 @@ int main(void) {
  hr_view_t v={.volume=90,.page=HR_PAGE_HOME};uint8_t m[6]={1};
  hr_init(&v.core,1,m,11,0);hr_room_enable(&v.core,0);v.core.hardware_ok=true;
  v.activation_required=true;
+ v.phone_connected=true;
+ assert(hr_handle_key(&v,HR_KEY_DOWN,0)==HR_EFFECT_NONE);
+ v.phone_connected=false;
  for(int event=HR_KEY_NONE;event<=HR_KEY_END;event++)assert(hr_handle_key(&v,event,0)==(event==HR_KEY_DOWN?HR_EFFECT_ACTIVATE:HR_EFFECT_NONE));
  v.activation_required=false;v.core.social.friends=1u<<2;
  hr_handle_key(&v,HR_KEY_DOWN,1);assert(v.page==HR_PAGE_FRIENDS&&v.friend_selection==2);

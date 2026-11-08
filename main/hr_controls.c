@@ -28,7 +28,7 @@ static void game_return_room(hr_view_t*v,uint32_t now) {
 }
 int hr_handle_key(hr_view_t *v,int event,uint32_t now) {
  if(v->intro_kind)return HR_EFFECT_NONE;
- if(v->activation_required)return event==HR_KEY_DOWN?HR_EFFECT_ACTIVATE:HR_EFFECT_NONE;
+ if(v->activation_required)return !v->phone_connected && event==HR_KEY_DOWN?HR_EFFECT_ACTIVATE:HR_EFFECT_NONE;
  if(v->room_joining) {
   if(v->page!=HR_PAGE_LOBBY || v->phone_connected)v->room_joining=false;
   else if((uint32_t)(now-v->room_join_started)>=HR_ROOM_JOIN_MS) {

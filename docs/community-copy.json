@@ -4,8 +4,8 @@
   "description_zh": "明星&博主同款玩法，把 AI PASSPORT 变成随身对讲机和聚会游戏机。和朋友离线组队，对全体队友或指定伙伴按住说话；靠近碰一碰、双方确认，就能交换头像、昵称和签名。再用声音带 JOY 闯关：发声前进、升调跳高，收集金币冲向终点，比一比房间排行榜。附带蓝牙批量配置助手，可为多台胸卡分别设置人物或清空数据，配置后无需重启。",
   "description_en": "Try the JD Aidol Camp experience enjoyed by stars and creators. Turn AI PASSPORT into a pocket walkie-talkie and a party game: form an offline room and hold to talk to everyone or one teammate. Bring two badges close and confirm on both to exchange avatars, names and signatures. Then guide JOY with your voice: keep humming to move, raise your pitch to jump, collect coins and compare scores in the room. A companion Bluetooth console lets you assign profiles or clear data on several badges without rebooting.",
   "source_url": "https://github.com/arraylee/ai-passport-aidol-camp",
-  "firmware_version": "0.7.11",
-  "helper_version": "0.3.6",
-  "changelog_zh": "",
-  "changelog_en": ""
+  "firmware_version": "0.7.12",
+  "helper_version": "0.3.7",
+  "changelog_zh": "修复新设备首次激活后进入旧“设备组网编号”页的问题：新机使用内置默认喵喵，激活后直接进入首页。人物选择页显示名字，允许多台胸卡使用相同资料。使用蓝牙助手时，按键不会再打断设置流程；助手也可正确预览默认喵喵头像。",
+  "changelog_en": "Fresh badges now use the built-in Miaomiao profile and open the home screen directly after activation, replacing the obsolete network-number setup. Profile selection shows names and allows several badges to share a profile. Key presses no longer interrupt setup in the Bluetooth console, which also correctly previews the default Miaomiao avatar."
 }

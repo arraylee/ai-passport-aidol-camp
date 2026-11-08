@@ -505,14 +505,20 @@ bool hr_storage_load(uint8_t *id, uint8_t *v) {
     return false;
   }
   nvs_handle_t h;
-  if (nvs_open_from_partition("demo_cfg", "hideseek", NVS_READONLY, &h) !=
-      ESP_OK)
-    return false;
-  uint8_t b[12];
-  size_t n = sizeof b;
-  e = nvs_get_blob(h, "settings", b, &n);
-  nvs_close(h);
-  return e == ESP_OK && n == sizeof b && hr_config_decode(b, id, v);
+  if (nvs_open_from_partition("demo_cfg", "hideseek", NVS_READONLY, &h) ==
+      ESP_OK) {
+    uint8_t b[12];
+    size_t n = sizeof b;
+    e = nvs_get_blob(h, "settings", b, &n);
+    nvs_close(h);
+    if (e == ESP_OK && n == sizeof b && hr_config_decode(b, id, v))
+      return true;
+  }
+  // A profile is local presentation, never a required network address.
+  // Commit a valid default before activation instead of opening legacy setup.
+  *id = 1;
+  *v = 90;
+  return hr_storage_save(*id, *v);
 }
 bool hr_storage_save(uint8_t id, uint8_t volume_value) {
   if (!storage_ready)

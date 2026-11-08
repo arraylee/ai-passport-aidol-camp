@@ -1,0 +1,15 @@
+{
+  "versions": [
+    "0.7.11",
+    "0.7.12"
+  ],
+  "role": 1,
+  "dimensions": [
+    96,
+    156
+  ],
+  "png_sha256": "e52d94785b6efa842a714654fcc9d4f7320b4881d3654dd08dafb9fce752c7a6",
+  "compiled_portrait_sha256": "614c8c03f0958d636d67075ba52e642629a8fc6e34b69b95f7eaa9e46a9b7235",
+  "compiled_portrait_rgb565_equal": true,
+  "bytes": 29952
+}

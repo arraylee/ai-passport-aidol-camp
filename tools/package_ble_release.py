@@ -38,16 +38,25 @@ def main():
  evidence_path=ROOT/'docs/evidence'/('release-'+EVIDENCE_TAG+'.json')
  if evidence_path.exists():
   evidence=json.loads(evidence_path.read_text())
-  for key in ('device_flashing_performed','physical_acceptance','device_write_verified','boot_confirmed'):
+  for key in ('device_flashing_performed','physical_acceptance','device_write_verified','boot_confirmed','default_profile_verified','idle_sleep_verified','sleep_wake_verified'):
    if key in evidence:manifest[key]=evidence[key]
   manifest['validation_evidence']='docs/evidence/release-'+EVIDENCE_TAG+'.json'
   manifest['live_evidence']=evidence.get('physical_acceptance',manifest['live_evidence'])
- manifest['home_nickname']={'width_px':108,'jd_name':'京东3C数码','jd_measured_width_px':106,'font_px':20,'native_static_acceptance':True,'physical_acceptance':'pending'}
+ manifest['home_nickname']={'width_px':108,'font_px':20,'native_static_acceptance':True,'default_profile':'builtin Miaomiao, role 1, no uploaded avatar'}
  files={name:b for name,(_,b) in segments.items()};files[webname]=bytes(web)
  files['manifest.json']=(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n').encode()
  files['FONT-NOTICES.txt']=(ROOT/'assets/fonts/FONT-NOTICES.txt').read_bytes()
  files['LXGW-v1.522-OFL.txt']=(ROOT/'assets/fonts/LXGW-v1.522-OFL.txt').read_bytes()
- files['刷机与使用说明.txt']=('Aidol demo v'+VERSION+'\n昵称显示：京东3C数码，首页20px昵称区108px，完整静止一行。需升级本版固件以应用布局修正。\n\n官网选择 '+webname+'，起始地址0x0；不要全片擦除。原SN保护区不写入；完整网页BIN会覆盖原普通NVS。保留全部现有资料时使用分段包和safe_flash.py。\n本版新增：双方从首页打开“好友”，自动寻找同样打开好友的人；互选最近候选后，双方下键确认。取消后重新打开好友即可重试，已有好友也可更新。双方需要升级v0.7.10，单方新版无法手动匹配旧版。原自动碰一碰与好友列表保留。\n组队列表“游戏中”与远近文字置于行背景上层，游戏结束恢复信号显示。\n沿用修复：无线发送变慢时HELLO在线广播饿死对讲续期；许可超时立刻停音，按键仍按住时可等待新鲜匹配授权自动恢复，不延长占麦许可，不打断其他正在发言的人。松手停止，单次按住30秒上限保留。五六台建议统一升级，至少发言端和当前协调端都要更新才能验证完整调度修复。\n游戏：刺球死亡仍扣50分，复活在该球右侧安全平台并更新检查点，避免反复撞同一球；已拿金币不再生成，落水仍返回最近安全点。\n保留：名片多行签名与4片窗口传输、原头像、小程序修改资料/相册、JOY游戏及声音、20分钟休眠、90%默认音量、电量参数自动补齐、蓝牙配置助手v'+HELPER_VERSION+'。分区不变。\n验证：见docs/verification.md、docs/MANUAL-FRIENDS.md及manifest.json。旧版实机验收不等于本版；本版实机效果、五六台同时对讲、游戏手感和20分钟休眠/续航需要另行核实。\n').encode()
+ files['FLASH-AND-USAGE.txt']=(
+  '京东 Aidol 创造营 v'+VERSION+'\n'
+  '新机使用内置默认喵喵头像、昵称和签名。欢迎结束后，如出现待激活，短按下键进入首页；无需设置组网编号。\n\n'
+  '官网刷机：选择 '+webname+'，起始地址0x0，不要全片擦除。原SN身份区保留；完整网页BIN会覆盖普通NVS。需保留普通NVS时使用分段包和safe_flash.py。\n'
+  '分段地址：bootloader.bin 0x0，partition-table.bin 0x8000，app.bin 0x10000。\n\n'
+  '使用：上/中选择，下确认；首页进入组队后可选择游戏。对讲时选队友或全体，长按上键说话、松开结束。长按下键返回首页。\n'
+  '空闲20分钟自动休眠，上键唤醒；游戏、实际通话和蓝牙管理会推迟休眠。\n'
+  '配套蓝牙助手v'+HELPER_VERSION+'支持设置人物和清空数据，完成后关闭连接，无需重启。已有自定义资料升级会保留。\n\n'
+  '验证结果见manifest.json、docs/FIRST-BOOT.md及docs/evidence/release-'+EVIDENCE_TAG+'.json。单机检查不代表多机对讲、通关成绩和电池续航均已实测。\n'
+ ).encode()
  for name,b in files.items():(out/name).write_bytes(b)
  archive(out/(NAME+'-firmware.zip'),files)
  (out/'SHA256SUMS.txt').write_text(''.join(f'{sha(p.read_bytes())}  {p.name}\n' for p in sorted(out.iterdir()) if p.is_file() and p.name!='SHA256SUMS.txt'))

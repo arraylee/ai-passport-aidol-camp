@@ -1,0 +1,73 @@
+{
+  "version": "0.7.12",
+  "device_flashing_performed": true,
+  "device_write_verified": true,
+  "boot_confirmed": true,
+  "physical_acceptance": "Single-device partial acceptance: cold first activation opens home; basic physical controls and voice game; profile/activation/volume persistence across controlled reset; BLE custom profile and clear without MCU reboot; built-in default restored; real 20-minute idle shutdown logged; user physically confirmed Up wake and default profile retained. RTC wake cause and final post-BLE protected-region recheck were not captured before device reassignment. Multi-device radio/cards/rankings, completed game/high-score persistence and battery endurance remain unverified.",
+  "changes": [
+    "first boot persists default profile instead of network-number setup",
+    "profile menu shows persona name and permits duplicate profiles",
+    "activation key ignored while BLE connected"
+  ],
+  "host_tests": {
+    "passed": 42,
+    "failed": 0
+  },
+  "helper_tests": {
+    "run": 45,
+    "passed": 44,
+    "skipped": 1,
+    "failed": 0
+  },
+  "idf_build_passed": true,
+  "web_sha256": "5074de9d14063d03305c8f41ca999b75f6a8dd383e7ba7ea96a8df63aacd1276",
+  "date": "2026-11-08",
+  "default_profile_verified": true,
+  "idle_sleep_verified": true,
+  "sleep_wake_verified": true,
+  "helper_version": "0.3.7",
+  "flash_verification": {
+    "segments_readback_equal": true,
+    "identity_equal_after_flash": true,
+    "original_nvs_equal_after_flash": true,
+    "full_backup": false,
+    "full_chip_erase": false,
+    "after_ble_final_protection_recheck": "not completed; device reassigned"
+  },
+  "default_profile": {
+    "role": 1,
+    "name": "喵喵",
+    "signature": "FoloToy\n简单开放\n人人可造",
+    "custom_image_crc": 0,
+    "builtin_avatar_only": true,
+    "restored_without_mcu_reboot": true,
+    "personalized_test_data_in_web_bin": false
+  },
+  "idle_sleep": {
+    "configured_ms": 1200000,
+    "idle_to_goodbye_seconds": 1200.005,
+    "idle_to_sleep_request_seconds": 1201.717,
+    "panel_off_completed": true,
+    "peripherals_stopped": true,
+    "usb_disconnected": true,
+    "diagnostic_timeout_override": false,
+    "gpio_wake": "User physically confirmed Up wake and default Miaomiao retained; RTC wake cause not collected"
+  },
+  "limitations": [
+    "Only one test badge available",
+    "Full game completion, settlement and high-score persistence deferred by user",
+    "Friends and high-score storage were empty during clear test",
+    "RTC wake cause not captured; physical Up wake confirmed by user",
+    "No final post-BLE identity/NVS recheck",
+    "No battery discharge test"
+  ],
+  "notable_logs": [
+    "One BLE discovery returned no devices; a fresh scan found the same unit",
+    "SDK emitted duplicate I2S disable messages during shutdown; resumed audio_err remained zero",
+    "No watchdog, allocation failure, panic or unexpected reset observed after the controlled monitor/reset baseline"
+  ],
+  "wake_evidence": {
+    "user_confirmation": "黑屏后上键唤醒正常，默认喵喵还在",
+    "rtc_wake_reason_verified": false
+  }
+}

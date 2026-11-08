@@ -656,17 +656,18 @@ void hr_ui_render(const hr_view_t *v) {
   if (v->page != HR_PAGE_RADIO)
     text(title, "AIDOL · LIVE");
   if (v->setup) {
-    text(title, "设备组网编号");
+    text(title, "人物资料");
     visible(count, false);
-    snprintf(b, sizeof b, "%u 号设备", v->choice);
+    snprintf(b, sizeof b, "%s", hr_display_name(v->choice));
     text(target, b);
+    text_font(target, &hr_font20, 0);
     lv_obj_set_pos(target, 12, 100);
     text_align(target, LV_TEXT_ALIGN_CENTER, 0);
-    text(body, "六台编号各不相同\n昵称头像在小程序修改");
+    text(body, "昵称头像在小程序修改\n不同胸卡可用相同资料");
     lv_obj_set_pos(body, 12, 155);
     text_align(body, LV_TEXT_ALIGN_CENTER, 0);
-    text(status, v->save_failed ? "保存失败，请重试" : "只设置联机编号");
-    footer("上／中选编号，下键保存", "长按下键返回");
+    text(status, v->save_failed ? "保存失败，请重试" : "仅更换本机资料");
+    footer("上／中选人物，下键保存", "长按下键返回");
     return;
   }
   if (v->volume_mode) {

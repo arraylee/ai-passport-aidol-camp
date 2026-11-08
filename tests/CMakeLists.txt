@@ -63,6 +63,7 @@ target_link_libraries(test_welcome PRIVATE hr_core)
 add_test(NAME welcome COMMAND test_welcome ${CMAKE_CURRENT_LIST_DIR}/../assets/aidol/welcome.adpcm)
 
 add_test(NAME activation_storage COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_LIST_DIR}/test_activation_storage.py)
+add_test(NAME first_boot_profile COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_LIST_DIR}/test_first_boot_profile.py)
 
 add_test(NAME volume_default COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_LIST_DIR}/test_volume_default.py)
 add_test(NAME welcome_storage COMMAND ${Python3_EXECUTABLE} ${CMAKE_CURRENT_LIST_DIR}/test_welcome_storage.py)

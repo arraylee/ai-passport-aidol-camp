@@ -1,20 +1,17 @@
 {
-  "firmware_version": "0.7.11",
-  "helper_version": "0.3.6",
-  "date": "2026-11-07",
-  "firmware_runtime_changed": false,
-  "compiled_firmware_inputs_match_original_release": 88,
+  "firmware_version": "0.7.12",
+  "helper_version": "0.3.7",
+  "date": "2026-11-08",
+  "firmware_runtime_changed": true,
   "idf_build_and_size": "passed",
-  "frozen_app_sha256": "b7aff8b34e960e3f701053958fed5c7b533714de2dbf0d041de45ffad3c09411",
-  "web_bin_sha256": "f5627fdb8e979212f404cc7c08231f783cc6e504de1aa21c80281d0319a384d2",
+  "web_bin_sha256": "5074de9d14063d03305c8f41ca999b75f6a8dd383e7ba7ea96a8df63aacd1276",
   "host_tests": {
-    "passed": 41,
-    "failed": 0,
-    "fresh_public_source_build": true
+    "passed": 42,
+    "failed": 0
   },
   "helper_tests": {
-    "run": 44,
-    "passed": 43,
+    "run": 45,
+    "passed": 44,
     "skipped": 1,
     "failed": 0
   },
@@ -22,16 +19,23 @@
     "passed": 5,
     "failed": 0
   },
-  "safe_flash_tests": "passed, mocked hardware; no device write",
+  "safe_flash_tests": "passed, mocked hardware; physical segment readback recorded separately",
   "cover": {
     "width": 1086,
     "height": 1448,
-    "generation_tool": "built-in image_gen",
+    "generation_tool": "built-in image_gen edit",
     "completed": true,
     "final_upload_file_visually_inspected": true,
     "type": "gameplay illustration"
   },
-  "original_generated_source_and_license_whitespace": "preserved unchanged; authored publication text and packaging edits checked separately",
-  "device_flashing_performed": false,
-  "physical_acceptance": "pending: multi-device radio/audio, game feel, 20-minute sleep/wake and full battery discharge not verified for this version"
+  "device_flashing_performed": true,
+  "device_write_verified": true,
+  "default_profile_verified": true,
+  "idle_sleep_verified": true,
+  "sleep_wake_verified": true,
+  "physical_acceptance": "Single-device partial acceptance: cold first activation opens home; basic physical controls and voice game; profile/activation/volume persistence across controlled reset; BLE custom profile and clear without MCU reboot; built-in default restored; real 20-minute idle shutdown logged; user physically confirmed Up wake and default profile retained. RTC wake cause and final post-BLE protected-region recheck were not captured before device reassignment. Multi-device radio/cards/rankings, completed game/high-score persistence and battery endurance remain unverified.",
+  "wake_evidence": {
+    "user_confirmation": "黑屏后上键唤醒正常，默认喵喵还在",
+    "rtc_wake_reason_verified": false
+  }
 }

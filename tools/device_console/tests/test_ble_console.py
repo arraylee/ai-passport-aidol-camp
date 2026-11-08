@@ -104,6 +104,16 @@ class BLETests(unittest.IsolatedAsyncioTestCase):
   struct.pack_into('<I',self.radio.b,205,0)
   rows=await console.scan_async()
   self.assertEqual(rows[0]['info']['avatar_url'],'')
+ async def test_shipped_default_avatar_for_current_firmware(self):
+  root=Path(__file__).resolve().parents[1]
+  console=BLEConsole(root,self.radio.client,self.radio.scan)
+  info={'supported':True,'role':1,'version':'0.7.12','image_crc':0}
+  console._cache(FakeDevice.address,info)
+  self.assertEqual(info['avatar_url'],'/presets/1-avatar.png')
+  self.assertEqual(info['avatar_source'],'builtin')
+  info['version']='99.0.0'
+  console._cache(FakeDevice.address,info)
+  self.assertEqual(info['avatar_url'],'')
  async def test_scan_inspect_restore_and_readback_keep_boot(self):
   await self.console.scan_async();info=await self.console.inspect_async(FakeDevice.address);before=info['boot'];result=await self.console.execute_async('restore',FakeDevice.address,info['mac'],2)
   self.assertTrue(result['verified']);self.assertEqual(result['boot'],before);self.assertEqual(self.radio.payload,b'PNGtest');self.assertFalse(self.radio.connected)
